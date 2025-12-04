@@ -3,14 +3,16 @@
 #include <string> // for string class
 using namespace std;
 
-Player::player create_player() {
-    Player::player player_construct;
+namespace Player {
+    player Player::create_player() {
+        player player_construct;
 
-    cout << "Quel est votre pseudo ?" << std::endl;
-    cin >> player_construct.name;
+        cout << "Quel est votre pseudo ?" << std::endl;
+        cin >> player_construct.name;
 
-    cout << "Quel est le symbole que vous utiliserez ?" << std::endl;
-    cin >> player_construct.symbol;
+        cout << "Quel est le symbole que vous utiliserez ?" << std::endl;
+        cin >> player_construct.symbol;
 
-    return player_construct;
+        return player_construct;
+    }
 }
